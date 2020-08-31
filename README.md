@@ -1,345 +1,342 @@
 # Fortnite-LobbyBot
 [![Python Versions](https://img.shields.io/badge/3.7%20%7C%203.8-blue)](https://www.python.org/downloads/)  
 <a href="https://discord.gg/NEnka5N"><img src="https://discordapp.com/api/guilds/718709023427526697/widget.png?style=banner2" /></a>  
-English is [Here](https://github.com/gomashio1596/Fortnite-LobbyBot/blob/master/README_EN.md "README_EN.md")  
-El español está [aquí](https://github.com/gomashio1596/Fortnite-LobbyBot/blob/master/README_ES.md "README_ES.md")  
-Fortnitepyを使用したFortniteのボット  
-コマンドを送ることで操作ができる  
+A Fortnite bot using fortnitepy  
+You can control bot by sending command  
 
-# 導入
+My translation is bad. If you have better translation, please tell me.  
+
+# Install
 # PC
 https://github.com/gomashio1596/Fortnite-LobbyBot  
-[Python 3.7](https://www.python.org/downloads "Pythonダウンロード")以上が必要  
+[Python 3.7](https://www.python.org/downloads "Python Download") or higher is required  
 
-INSTALL.batを実行する  
-RUN.batを実行する  
-開いたサイトでconfigを設定する  
-タブを再読み込みすることで他の設定もできます  
+Run INSTALL.bat  
+Run RUN.bat  
+Write details in site which opened  
+Press Save button
+You can write other details by reloading tab  
 
 # Repl.it
-Repl.itではプロジェクトをプライベートにすることができないため、メールアドレスが他人に見られる可能性があります!  
+Repl.it can't make project private, it means there's a possibility to other people see emails!  
 
 https://repl.it  
-の右上の"sign up"を押してログインする  
-右上の"+ new repl"を押して、"Import From GitHub"タブを開く  
+Click "sign up" on the top right  
+Click "+ new repl" on the top right, then open "Import From GitHub" tab  
+Copy
 https://github.com/gomashio1596/Fortnite-LobbyBot  
-をコピーして"Paste any repository URL"に貼り付ける  
-"Import from Github"を押す  
-開いたページ(replページと呼びます)の上の"run▶"を押す  
-[Uptimerobot](https://uptimerobot.com "Uptimerobot")  
-でアカウントを作ってログインして"Dashboard"を押す  
-"\+ Monitor"を押してrepl.itに戻って、webタブを開いてURLをコピーして  
-uptimerobotで"Monitor Type"を"HTTP(s)"にしてURLを貼り付ける  
-"Friendly Name"に好きな名前を付けて"Create Monitor"を押す 
-webページでconfigの設定をする  
-タブを再読み込みすることで他の設定もできます  
+and paste this to "Paste any repository URL"  
+Press "Import from GitHub"  
+Press "runâ–¶" on the site which opened(Call this repl page) on top  
+Create account in [Uptimerobot](https://uptimerobot.com "Uptimerobot") 
+and press "Dashboard"  
+Press "\+ Monitor" and back to repl.it, then open "web" tab and copy URL  
+Go to uptimerobot, change "Monitor Type" to "HTTP(s)" and paste URL  
+Enter any name in "Friendly Name" and press "Create Monitor"  
+Write details in web page  
+You can write other details by reload tab  
 
 # Glitch
-Glitchは24時間起動をすることができなくなったので推奨されません!  
+Glitch is not recommended because can't make bot 24/7!
 
-https://glitch.com  
-の右上のSign inを押してGlitchアカウントを作る  
-https://fortnite-lobbybot.glitch.me  
-Remixを押してRemixする  
-左上の四角いマークを押して、Make This Project Privateにチェックを入れてプロジェクトに鍵を掛ける  
-上のShowを押してIn a New Windowを押す  
-開いたサイトでconfigを設定する  
-タブを再読み込みすることで他の設定もできます  
-
-# Web
-初回起動ではconfigの設定が出る  
-次回以降は設定したパスワードを入力することで、config等の設定、パーティーの状態の確認等ができる  
+https://glitch.com
+Click Sign in on the top right  
+https://glitch.com/~fortnite-lobbybot  
+Click project name and click Remix Project to remix  
+Click project name(your project) and click Make This Project Private to make project private  
+Click Show and In a new Window  
+Write details in site which opened  
+You can write other details by reload tab  
 
 # config
 ```
 Fortnite
-email                     : ボット用アカウントのメールアドレス。 複数設定可能
-owner                     : 所有者として設定したいユーザーの名前またはID
-platform                  : ボットのプラットフォーム。 後述
-outfit                    : ボットの初期コスチューム。名前かID
-outfit_style              : ボットの初期コスチュームのスタイル
-backpack                  : ボットの初期バックアクセサリー。名前かID
-backpack_style            : ボットの初期バックアクセサリーのスタイル
-pickaxe                   : ボットの初期収集ツール。名前かID
-pickaxe_style             : ボットの初期収集ツールのスタイル
-emote                     : ボットの初期エモート。名前かID
-playlist                  : ボットの初期プレイリストのID
-banner                    : ボットの初期バナーのID
-banner_color              : ボットの初期バナーの色ID
-avatar_id                 : ボットの初期アバターのID。後述
-avatar_color              : ボットの初期アバターの色。後述
-level                     : ボットの初期レベル
-tier                      : ボットの初期ティア
-xpboost                   : ボットの初期XPブースト
-friendxpboost             : ボットの初期フレンドXPブースト
-status                    : ボットの初期ステータス。 変数が使える。 後述
-privacy                   : ボットの初期のプライバシー。 後述
-whisper                   : ボットが囁きからコマンドを受け付けるかどうか。 true か false
-partychat                 : ボットがパーティーチャットからコマンドを受け付けるかどうか。 true か false
-disablewhisperperfectly   : 囁きが無効の場合、所有者も使えなくするかどうか
-disablepartychatperfectly : パーティーチャットが無効の場合、所有者も使えなくするかどうか
-joinemote                 : ボットのパーティーに誰かが参加した時にエモートを踊りなおすかどうか。 true か false
-click_invite              : 'ここをクリックして招待'を送信するかどうか。 true か false
-disable_voice             : パーティーのボイスチャットを無効化するかどうか。 true か false
-ignorebot                 : ボットからのコマンドを無視するかどうか。 true か false
-joinmessage               : ボットのパーティーに誰かが参加した時のメッセージ。 \n で改行。 変数が使える。 後述
-randommessage             : ボットのパーティーに誰かが参加した時のランダムメッセージ。 \n で改行。 変数が使える。 後述
-joinmessageenable         : ボットのパーティーに誰かが参加した時にメッセージを出すかどうか。 true か false
-randommessageenable       : ボットのパーティーに誰かが参加した時にランダムメッセージを出すかどうか。 true か false
-outfitmimic               : 他人のコスチュームを真似るかどうか。 true か false か ユーザーの名前またはID
-backpackmimic             : 他人のバックアクセサリーを真似るかどうか。 true か false か ユーザーの名前またはID
-pickaxemimic              : 他人の収集ツールを真似るかどうか。 true か false か ユーザーの名前またはID
-emotemimic                : 他人のエモートを真似るかどうか。 true か false か ユーザーの名前またはID
-mimic-ignorebot           : ボットユーザーは真似ないかどうか。 true か false
-mimic-ignoreblacklist     : ブラックリストのユーザーは真似ないかどうか。 true か false
-outfitlock                : コスチュームをロックするかどうか。 true か false
-backpacklock              : バックアクセサリーをロックするかどうか。 true か false
-pickaxelock               : 収集ツールをロックするかどうか。 true か false
-emotelock                 : エモートをロックするかどうか。 true か false
-acceptinvite              : ボットが招待を承諾するかどうか。 所有者からの招待は常に承諾 true か false
-acceptfriend              : ボットがフレンド申請を承諾するかどうか。 true か false か null
-addfriend                 : ボットがパーティーメンバーにフレンド申請を送るかどうか。 true か false
-invite-ownerdecline       : ボットの所有者がパーティーにいるときに招待を拒否するかどうか。 true か false
-inviteinterval            : 招待を承諾した後intervalの秒数だけ招待を拒否するようにするかどうか。 true か false
-interval                  : 招待を承諾した後招待を拒否する秒数
-waitinterval              : waitコマンドで招待を拒否する秒数
-hide-user                 : パーティーに参加したユーザーを非表示にするかどうか。 true か false
-hide-blacklist            : パーティーに参加したブラックリストのユーザーを非表示にするかどうか。 true か false
-show-owner                : hide-userがtrueのときに所有者を表示するかどうか。 true か false
-show-whitelist            : hide-userがtrueのときにホワイトリストのユーザーを表示するかどうか。 true か false
-show-bot                  : hide-userがtrueのときにボットを表示するかどうか。 true か false
-blacklist                 : ブラックリストに指定するユーザーのリスト。 ユーザー名かユーザーID
-blacklist-declineinvite   : ブラックリストのユーザーからの招待を拒否するかどうか。 true か false
-blacklist-autoblock       : ブラックリストのユーザーをブロックするかの設定。 true か false
-blacklist-autokick        : ブラックリストのユーザーを自動的にパーティーからキックするかの設定。 true か false
-blacklist-autochatban     : ブラックリストのユーザーを自動的にチャットバンするかどうか。 true か false
-blacklist-ignorecommand   : ブラックリストのユーザーからのコマンドを無視するかどうか。 true か false
-whitelist                 : ホワイトリストに指定するユーザーのリスト。 ユーザー名かユーザーID
-whitelist-allowinvite     : ホワイトリストのユーザーがボットをいつでも招待できるようにするかの設定。 true か false
-whitelist-declineinvite   : ホワイトリストのユーザーがパーティーにいるとき、招待を拒否するかどうか。 true か false
-whitelist-ignorelock      : ホワイトリストのユーザーがスキンロック等を無視できるかどうか。 true か false
-whitelist-ownercommand    : ホワイトリストのユーザーが所有者コマンドを使えるかどうか。 true か false
-whitelist-ignoreng        : ホワイトリストのユーザーがNGワードを無視できるかどうか。 true か false
-invitelist                : inviteallコマンドで招待するユーザーのリスト
-otherbotlist              : ignorebotで無視する他のボット
+email                     : Email address for bot account. Can be multiple
+owner                     : Owner's name or ID
+platform                  : Bot's platform. See below
+outfit                    : Bot's default outfit. Name or ID
+outfit_style              : Bot's default outfit style
+backpack                  : Bot's default back bling. Name or ID
+backpack_style            : Bot's default back bling style
+pickaxe                   : Bot's default harvesting tool. Name or ID
+pickaxe_style             : Bot's default harvesting tool style
+emote                     : Bot's default emote. Name or ID
+playlist                  : Bot's default playlist ID
+banner                    : Bot's default banner ID
+banner_color              : Bot's default banner color
+avatar_id                 : Bot's default avatar ID
+avatar_color              : Bot's default avatar color. See below
+level                     : Bot's default level
+tier                      : Bot's default tier
+xpboost                   : Bot's default XP boost
+friendxpboost             : Bot's default friend XP boost
+status                    : Bot's default status. Can use variables. See below
+privacy                   : Bot's default privacy. See below
+whisper                   : Whether bot will accept command from whisper. true or false
+partychat                 : Whether bot will accept command from partychat. true or false
+disablewhisperperfectly   : Config for if whisper is disabled, whether decline command from owner too
+disablepartychatperfectly : Config for if partychat is disabled, whether decline command from owner too
+joinemote                 : Whether bot re dance emote when someone joined to the party. true or false
+click_invite              : Whether bot will send 'Click here to invite'
+disable_voice             : Whether disable voice chat of party. true or false
+ignorebot                 : Whether bot will ignore command from bots. true or false
+joinmessage               : Message when someone joined to the party. \n to line break. Can use variables. See below
+randommessage             : Random message when someone joined to the party. \n to line break. Can use variables. See below
+joinmessageenable         : Whether bot will send message when someone joined to the party. true or false
+randommessageenable       : Whether bot will send random message when someone joined to the party. true or false
+outfitmimic               : Whether bot will mimic other player's outfit. true or false or user's name or ID
+backpackmimic             : Whether bot will mimic other player's backpack. true or false or user's name or ID
+pickaxemimic              : Whether bot will mimic other player's pickaxe. true or false or user's name or ID
+emotemimic                : Whether bot will mimic other player's emote. true or false or user's name or ID
+mimic-ignorebot           : Whether bot won't mimic bot. true or false
+mimic-ignoreblacklist     : Whether bot won't mimic blacklisted user. true or false
+outfitlock                : Whether lock outfit. true or false
+backpacklock              : Whether lock backpack. true or false
+pickaxelock               : Whether lock pickaxe. true or false
+emotelock                 : Whether lock emote. true or false
+acceptinvite              : Whether bot will accept invite. Invite from owner will accepted every time. true or false
+acceptfriend              : Whether bot will accept friend request. true or false or null
+addfriend                 : Whether bot will send friend request to party member. true or false
+invite-ownerdecline       : Whether bot will decline invite when owner in the party. true or false
+inviteinterval            : Whether bot will decline invite for interval seconds after accepted invite. true or false
+interval                  : The number of seconds for decline invite after accepted invite
+waitinterval              : The number of seconds for decline invite for wait command
+hide-user                 : Whether bot will hide user joined to the party. true or false
+hide-blacklist            : Whether bot will hide blacklisted user joined to the party. true or false
+show-owner                : Whether bot will show owner when hide-user is true. true or false
+show-whitelist            : Whether bot will show whitelisted user when hide-user is true. true or false
+show-bot                  : Whether bot will show bot when hide-user is true. true or false
+blacklist                 : List for blacklist users. name or ID
+blacklist-declineinvite   : Whether bot will decline invite from blacklisted users. true or false
+blacklist-autoblock       : Whether bot will block blacklisted users. true or false
+blacklist-autokick        : Whether bot will kick blacklisted users from the party. true or false
+blacklist-autochatban     : Whether bot will chatban blacklisted users. true or false
+blacklist-ignorecommand   : Whether bot will ignore command from blacklisted users. true or false
+whitelist                 : List of whitelist users. name or ID
+whitelist-allowinvite     : Whether whitelisted users can invite bot any time. true or false
+whitelist-declineinvite   : Whether bot will decline invite when whitelisted users in the party. true or false
+whitelist-ignorelock      : Whether whitelisted users can ignore locks. true or false
+whitelist-ownercommand    : Whether whitelisted users can use owner commands. true or false
+whitelist-ignoreng        : Whether whitelisted users can ignore NG words. true or false
+invitelist                : User list for inviteall command
+otherbotlist              : Other bots which ignore in ignorebot
 
 Discord
-enabled                   : Discord Botを起動するかどうか true か false
-token                     : Discord Botのトークン
-owner                     : 所有者のユーザーID
-channels                  : ボットのコマンドチャンネルとして使用するチャンネルのチャンネル名 後述
-status                    : Discord Botのステータス。 変数が使えます。 後述
-status_type               : Discord Botのステータスの種類。 後述
-discord                   : ボットがDiscordからコマンドを受け付けるかどうか。 true か false
-disablediscordperfectly   : Discordが無効の場合、所有者も使えなくするかどうか
-blacklist                 : ブラックリストに指定するユーザーのリスト ユーザーID
-blacklist-ignorecommand   : ブラックリストのユーザーからのコマンドを無視するかどうか。 true か false
-whitelist                 : ホワイトリストに指定するユーザーのリスト ユーザーID
-whitelist-ignorelock      : ホワイトリストのユーザーがスキンロック等を無視できるかどうか。 true か false
-whitelist-ownercommand    : ホワイトリストのユーザーが所有者コマンドを使えるかどうか。 true か false
-whitelist-ignoreng        : ホワイトリストのユーザーがNGワードを無視できるかどうか。 true か false
+enabled                   : Whether will boot Discord Bot. true or false
+token                     : Token for Discord Bot
+owner                     : Owner's user ID
+channelname               : Channel name used for bot's command channel. See below
+status                    : Discord Bot's status. Can use variables. See below
+status_type               : Discord Bot's status type. See below
+discord                   : Whether bot will accept command from Discord. true or false
+disablediscordperfectly   : Config for if discord is disabled, whether decline command from owner too. true or false
+blacklist                 : List of blacklist users. user ID
+blacklist-ignorecommand   : Whether bot will ignore command from blacklisted users. true or false
+whitelist                 : List of whitelist users. user ID
+whitelist-ignorelock      : Whether whitelisted users can ignore locks. true or false
+whitelist-ownercommand    : Whether whitelisted users can use owner commands. true or false
+whitelist-ignoreng        : Whether whitelisted users can ignore NG words. true or false
 
 Web
-enabled                   : ウェブサーバーを起動するかどうか。 true か false
-ip                        : ウェブサーバーのIPアドレス 後述
-port                      : ウェブサーバーのポート番号
-password                  : ウェブサーバーのパスワード
-login_required            : ウェブサーバーにアクアスするのにパスワードが必要かどうか。 true か false
-web                       : ウェブからのコマンドを受け付けるかどうか。 true か false
-log                       : ウェブサーバーのアクセスログを出すかどうか。 true か false
+enabled                   : Whether will boot web server. true or false
+ip                        : IP address for web server. See below
+port                      : Port for web server
+password                  : Password for web server
+login_required            : Whether login required to access web server. true or false
+web                       : Whether bot will accept command from web. true or false
+log                       : Whether print web server access log
 
-replies-matchmethod       : repliesのマッチ方式。 後述
-ng-words                  : NGワードに指定する言葉
-ng-word-matchmethod       : NGワードのマッチ方式
-ng-word-kick              : NGワードを発言したユーザーをキックするかどうか。 true か false
-ng-word-chatban           : NGワードを発言したユーザーをチャットバンするかどうか。 true か false
-ng-word-blacklist         : NGワードを発言したユーザーをブラックリストに入れるかどうか。 true か false
-lang                      : ボットの言語
-search-lang               : アイテム検索に使う言語
-restart_in                : ボットが再起動するまでの時間
-search_max                : 検索の最大数
-no-logs                   : コンソールにログを出すかどうか。 true か false
-ingame-error              : プレイヤーにエラーを送信するかどうか。 true か false
-discord-log               : Discordにログを送信するかどうか。 true か false
-omit-over2000             : Discordのログで2000文字を超過した場合に2000文字以上を切り捨てるかどうか。 true か false
-skip-if-overflow          : Discordのログであまりにもログ送信が遅れた場合、溜まったログを削除するかどうか。 true か false
-hide-email                : Discordのログでメールアドレスを隠すかどうか。 true か false
-hide-token                : Discordのログでトークンを隠すかどうか。 true か false
-hide-webhook              : Discordのログでwebhookのurlを隠すかどうか。 true か false
-webhook                   : Discordのwebhookのurl
-caseinsensitive           : コマンドを大文字小文字、平仮名片仮名を区別しないかどうか。 true か false
-loglevel                  : ログにどのくらいの情報を流すか normal か info か debug
-debug                     : Fortnitepyのデバッグモードをオンにするかどうか。 true か false
+replies-matchmethod       : Match method for replies. See below
+ng-words                  : Texts set as NG words
+ng-word-matchmethod       : Match method for NG words
+ng-word-kick              : Whether bot will kick user which said NG words
+ng-word-chatban           : Whether bot will chatban user which said NG words
+ng-word-blacklist         : Whether bot will add user which said NG words to blacklist
+lang                      : Bot's lang
+search-lang               : Item search lang
+restart_in                : Time until restart bot
+search_max                : Max amout of search
+no-logs                   : Whether print logs in console. true or false
+ingame-error              : Whether send errors to player. true or false
+discord-log               : Whether send logs to Discord. true or false
+omit-over2000             : Whether will omit texts over 2000 chars on discord log. true or false
+skip-if-overflow          : Skip discord logs if overflow. true or false
+hide-email                : Whether hide emails in Discord logs. true or false
+hide-token                : Whether hide token in Discord logs. true or false
+hide-webhook              : Whether hide webhook url in Discord logs. true or false
+webhook                   : Discord's webhook url
+caseinsensitive           : Whether make command not case insensitive true or false
+loglevel                  : Log level. normal or info or debug
+debug                     : Whether enable fortnitepy debug mode. true or false
 ```
 
-# コマンド一覧
-ここに書かれているコマンド名は、ただの識別名  
-全てのコマンドの発動ワードはcommands.json(コマンドエディター)を用いて変更できる  
-全て , で区切ることで複数設定可  
-全てのコマンドはデフォルトでは所有者しか使用できない  
-アイテム名を打つことでそのアイテムにすることもできる  
+# List of commands
+All command can set multiple by split in ,  
+All commands can be used by owner only by default  
+Also enter item name to change item to it  
+You can set items by entering item IDs  
 
 ```
-usercommands                              : ユーザーも使えるコマンドを指定する。  ここにあるコマンドに加え["cid_","bid_","petcarrier_","pickaxe_id_","eid_","emoji_","toy_","item-search"]が使用できる
-true                                      : コマンドの true として扱う文字列
-false                                     : コマンドの false として扱う文字列
-me                                        : コマンドの送り主として扱う文字列
-prev                                      : 一つ前のコマンドを繰り返す
-eval                                      : eval [プログラム] 内容を式として評価し、その内容を返す
-exec                                      : exec [プログラム] 内容を文として評価し、その内容を返す
-restart                                   : プログラムを再起動する
-relogin                                   : アカウントに再ログインする
-reload                                    : configとcommandsを再読み込みする
-addblacklist                              : addblacklist [ユーザー名/ユーザーID] ユーザーをFortniteのブラックリストに追加する
-removeblacklist                           : removeblacklist [ユーザー名/ユーザーID] ユーザーをFortniteのブラックリストから削除する
-addwhitelist                              : addwhitelist [ユーザー名/ユーザーID] ユーザーをFortniteのホワイトリストに追加する
-removewhitelist                           : removewhitelist [ユーザー名/ユーザーID] ユーザーをFortniteのホワイトリストから削除する
-addblacklist_discord                      : addblacklist_discord [ユーザーID] ユーザーをDiscordのブラックリストに追加する
-removeblacklist_discord                   : removeblacklist_discord [ユーザーID] ユーザーをDiscordのブラックリストから削除する
-addwhitelist_discord                      : addwhitelist_discord [ユーザーID] ユーザーをDiscordのホワイトリストに追加する
-removewhitelist_discord                   : removewhitelist_discord [ユーザーID] ユーザーをDiscordのホワイトリストから削除する
-addinvitelist                             : addinvitelist [ユーザー名/ユーザーID] ユーザーを招待リストに追加する
-removeinvitelist                          : removeinvitelist [ユーザー名/ユーザーID] ユーザーを招待リストから削除する
-get                                       : get [ユーザー名/ユーザーID] パーティーにいるユーザーの情報を取得する
-friendcount                               : 現在のフレンド数を表示する
-pendingcount                              : 現在のフレンド申請数を表示する(方向関係なし)
-blockcount                                : 現在のブロック数を表示する
-friendlist                                : 現在のフレンドリストを表示する
-pendinglist                               : 現在のフレンド申請リストを表示する
-blocklist                                 : 現在のブロックリストを表示する
-outfitmimic                               : outfitmimic [true / false / ユーザー名/ユーザーID] 他人のスキンを真似るかどうか
-backpackmimic                             : backpackmimic [true / false / ユーザー名/ユーザーID] 他人のバッグを真似るかどうか
-pickaxemimic                              : pickaxemimic [true / false / ユーザー名/ユーザーID] 他人のツルハシを真似るかどうか
-emotemimic                                : emotemimic [true / false / ユーザー名/ユーザーID] 他人のエモートを真似るかどうか
-whisper                                   : whisper [true / false] 囁きからのコマンドを受け付けるかどうか
-partychat                                 : partychat [true / false] パーティーチャットからのコマンドを受け付けるかどうか
-discord                                   : discord [true / false] Discordからのコマンドを受け付けるかどうか
-web                                       : web [true / false] ウェブからのコマンドを受け付けるかどうか
-disablewhisperperfectly                   : whisperperfect [true / false] 囁きが無効の時、所有者も使えなくするかどうか
-disablepartychatperfectly                 : partychatperfect [true / false] パーティーチャットが無効の時、所有者も使えなくするかどうか
-disablediscordperfectly                   : discordperfect [true / false] Discordが無効の時、所有者も使えなくするかどうか
-acceptinvite                              : acceptinvite [true / false] パーティー招待を承諾するかどうか
-acceptfriend                              : acceptfriend [true / false] フレンド申請を承諾するかどうか
-joinmessageenable                         : joinmessageenable [true / false] パーティーに誰かが参加した時のメッセージを出すかどうか
-randommessageenable                       : randommessageenable [true / false] パーティーに誰かが参加したときのランダムメッセージを出すかどうか
-wait                                      : configのwaitintervalの秒数だけ招待を拒否する
-join                                      : join [ユーザー名/ユーザーID] ユーザーのパーティーに参加する
-joinid                                    : joinid [パーティーID] パーティーに参加する
-leave                                     : パーティーを離脱する
-invite                                    : invite [ユーザー名 / ユーザーID] ユーザーをパーティーに招待する
-inviteall                                 : configのinvitelistのユーザーを招待する
-message                                   : message [ユーザー名 / ユーザーID] : [内容] ユーザーにメッセージを送信する
-partymessage                              : partymessage [内容] パーティーチャットにメッセージを送信する
-sendall                                   : sendall [内容] 全てのボットに同じコマンドを実行する
-status                                    : status [内容] ステータスを設定する
-banner                                    : banner [バナーID] [バナーの色] バナーを設定する
-avatar                                    : avatar [CID] [色(任意)] アバターを設定する
-level                                     : level [レベル] レベルを設定する
-bp                                        : bp [ティア] [XPブースト] [フレンドXPブースト] バトルパス情報を設定する
-privacy                                   : privacy [privacy_public / privacy_friends_allow_friends_of_friends / privacy_friends / privacy_private_allow_friends_of_friends / privacy_private] パーティーのプライバシーを変更する
-privacy_public                            : privacy コマンドで使う privacy_public
-privacy_friends_allow_friends_of_friends  : privacy コマンドで使う privacy_friends_allow_friends_of_friends
-privacy_friends                           : privacy コマンドで使う privacy_friends
-privacy_private_allow_friends_of_friends  : privacy コマンドで使う privacy_private_allow_friends_of_friends
-privacy_private                           : privacy コマンドで使う privacy_private
-getuser                                   : getuser [ユーザー名 / ユーザーID] ユーザーの名前とIDを表示する
-getfriend                                 : getefriend [ユーザー名 / ユーザーID] ユーザーの名前とIDを表示する
-getpending                                : getpending [ユーザー名 / ユーザーID] ユーザーの名前とIDを表示する
-getblock                                  : getblock [ユーザー名 / ユーザーID] ユーザーの名前とIDを表示する
-info                                      : info [info_party / info_item / id / skin / bag / pickaxe / emote] パーティー/アイテムの情報を表示する
-info_party                                : info コマンドで使う info_party
-pending                                   : pending [true / false] 保留しているフレンド申請を全て承諾/拒否する
-removepending                             : 自分が送ったフレンド申請を全て解除する
-addfriend                                 : addfriend [ユーザー名 / ユーザーID] ユーザーにフレンド申請を送信する
-removefriend                              : removefriend [ユーザー名 / ユーザーID] ユーザーをフレンドから削除する
-removeallfriend                           : removeallfriend 全てのフレンドを削除する
-remove_offline_for                        : remove_offline_for [日] [時間(任意)] [分(任意)] 指定した時間以上オフラインのフレンドを削除する
-acceptpending                             : acceptpending [ユーザー名 / ユーザーID] ユーザーからのフレンド申請を承諾する
-declinepending                            : declinepending [ユーザー名 / ユーザーID] ユーザーからのフレンド申請を拒否する
-blockfriend                               : blockfriend[ユーザー名 / ユーザーID] ユーザーをブロックする
-unblockfriend                             : unblockfriend [ユーザー名 / ユーザーID] ユーザーをブロック解除する
-voice                                     : voice [true / false] パーティーのボイスチャットを有効にするか。それ以前に参加していたメンバーには効果がありません
-chatban                                   : chatban [ユーザー名 / ユーザーID] : [理由(任意)] ユーザーをチャットバンする
-promote                                   : promote [ユーザー名 / ユーザーID] ユーザーにパーティーリーダーを譲渡する
-kick                                      : kick [ユーザー名 / ユーザーID] ユーザーをキックする
-hide                                      : hide [ユーザー名 / ユーザーID(任意)] ユーザーを非表示にする
-show                                      : show [ユーザー名 / ユーザーID(任意)] ユーザーを表示する
-ready                                     : 準備OK 状態にする
-unready                                   : 準備中 状態にする
-sitout                                    : 欠場中 状態にする
-match                                     : match [人数(任意)] マッチ状態を設定する
-unmatch                                   : マッチ状態を解除する
-swap                                      : swap [ユーザー名 / ユーザーID] ユーザーと位置を交換する
-outfitlock                                : outfitlock [true / false] スキンの変更をするかどうか
-backpacklock                              : backpacklock [true / false] バッグの変更をするかどうか
-pickaxelock                               : pickaxelock [true / false] ツルハシの変更をするかどうか
-emotelock                                 : emotelock [true / false] エモートの変更をするかどうか
-stop                                      : エモート/all系コマンドの表示を停止する
-addeditems                                : アップデートで追加されたすべてのアイテムを表示する
-shopitems                                 : アイテムショップのアイテムをすべて表示する
-alloutfit                                 : 全てのコスチュームを表示する
-allbackpack                               : 全てのバックアクセサリーを表示する
-allpet                                    : 全てのペットを表示する
-allpickaxe                                : 全ての収集ツールを表示する
-allemote                                  : 全てのエモートを表示する
-cid                                       : cid [CID] CIDでアイテムを検索し、見つかったアイテムに設定する
-bid                                       : bid [BID] BIDでアイテムを検索し、見つかったアイテムに設定する
-petcarrier                                : petcarrier [Petcarrier] Petcarrierでアイテムを検索し、見つかったアイテムに設定する
-pickaxe_id                                : pickaxe_id [Pickaxe_ID] Pickaxe_IDでアイテムを検索し、見つかったアイテムに設定する
-eid                                       : eid [EID] EIDでアイテムを検索し、見つかったアイテムに設定する
-emoji_id                                  : emoji_id [Emoji] Emojiでアイテムを検索し、見つかったアイテムに設定する
-toy_id                                    : toy_id [Toy] Toyでアイテムを検索し、見つかったアイテムに設定する
-id                                        : id [ID] IDでアイテムを検索し、見つかったアイテムに設定する
-outfit                                    : outfit [コスチューム名] コスチューム名でコスチュームを検索し、見つかったアイテムに設定する
-backpack                                  : backpack [バックアクセサリー名] バックアクセサリー名でバックアクセサリーを検索し、見つかったアイテムに設定する
-pet                                       : pet [ペット名] ペット名でペットを検索し、見つかったアイテムに設定する
-pickaxe                                   : pickaxe [収集ツール名] 収集ツール名で収集ツールを検索し、見つかったアイテムに設定する
-emote                                     : emote [エモート名] エモート名でエモートを検索し、見つかったアイテムに設定する
-emoji                                     : emoji [エモートアイコン名] エモートアイコン名でエモートアイコンを検索し、見つかったアイテムに設定する
-toy                                       : toy [おもちゃ名] おもちゃ名でおもちゃを検索し、見つかったアイテムに設定する
-item                                      : item [アイテム名] アイテム名でアイテムを検索し、見つかったアイテムに設定する
-set                                       : set [セット名] セット名でアイテムを検索し、見つかったアイテムに設定する
-setvariant                                : setvariant [skin / bag / pickaxe] [variant] [数値] variant/数値は無限に設定可 数が合わない場合は無視される。スタイル情報を設定する。後述
-addvariant                                : addvariant [skin / bag / pickaxe] [variant] [数値] variant/数値は無限に設定可 数が合わない場合は無視される。現在のスタイル情報にスタイル情報を追加する。後述
-setstyle                                  : setstyle [skin / bag / pickaxe] 現在付けているアイテムのスタイルを検索し、そのスタイルに設定する
-addstyle                                  : addstyle [skin / bag / pickaxe] 現在付けているアイテムのスタイルを検索し、そのスタイルに現在のスタイルを追加する
-setenlightenment                          : setenlightenment [数値] [数値] enlightenment情報を設定する 後述
-outfitasset                               : outfitasset [アセットパス] スキンをアセットパスから設定する
-backpackasset                             : backpackasset [アセットパス] バッグをアセットパスから設定する
-pickasset                                 : pickasset [アセットパス] ツルハシをアセットパスから設定する
-emoteasset                                : emoteasset [アセットパス] エモートをアセットパスから設定する
+usercommands                              : Set commands that can used by users too. Can use commands listed by here, in addition [ "cid_","bid_","petcarrier_","pickaxe_id_","eid_","emoji_","toy_","item-search"] can use
+true                                      : String which use as true in command
+false                                     : String which use as false in command
+me                                        : String which use as message's sender in command
+prev                                      : Repeat previous command
+eval                                      : eval [expression] Evaluate content as expression, then return result
+exec                                      : exec [statement] Evaluate content as statement, then return result
+restart                                   : Restart program
+relogin                                   : Relogin to account
+reload                                    : Reload config.json and commands.json
+addblacklist                              : addblacklist [user name/user ID] Add user to fortnite blacklist
+removeblacklist                           : removeblacklist [user name/user ID] Remove user from fortnite blacklist
+addwhitelist                              : addwhitelist [user name/user ID] Add user to fortnite whitelist
+removewhitelist                           : removewhitelist [user name/user ID] Remove user from fortnite whitelist
+addblacklist_discord                      : addblacklist_discord [user ID] Add user to Discord blacklist
+removeblacklist_discord                   : removeblacklist_discord [user ID] Remove user from Discord blacklist
+addwhitelist_discord                      : addwhitelist_discord [user ID] Add user to Discord whitelist
+removewhitelist_discord                   : removewhitelist_discord [user ID] Remove user from Discord whitelsit
+addinvitelist                             : addinvitelist [user name/user ID] Add user to invitelist
+removeinvitelist                          : removeinvitelist [user name/user ID] Remove user from invitelist
+get                                       : get [user name/user ID] Show info about party member
+friendcount                               : Show friend count
+pendingcount                              : Show friend request count(bidirection)
+blockcount                                : Show block count
+friendlist                                : Show friend list
+pendinglist                               : Show friend request list
+blocklist                                 : Show block list
+outfitmimic                               : outfitmimic [true / false / user name/user ID] Whether bot will mimic other player's outfit
+backpackmimic                             : backpackmimic [true / false / user name/user ID] Whether bot will mimic other player's backpack
+pickaxemimic                              : pickaxemimic [true / false / user name/user ID] Whether bot will mimic other player's pickaxe
+emotemimic                                : emotemimic [true / false / user name/user ID] Whether bot will mimic other player's emote
+whisper                                   : whisper [true / false] Whether bot will accept command from whisper
+partychat                                 : partychat [true / false] Whether bot will accept command from party chat
+discord                                   : discord [true / false] Whether bot will accept command from Discord
+web                                       : web [true / false] Whether bot will accept command from web
+disablewhisperperfectly                   : whisperperfect [true / false] Config for if whisper is disabled, whether decline command from owner too
+disablepartychatperfectly                 : partychatperfect [true / false] Config for if party chat is disabled, whether decline command from owner too
+disablediscordperfectly                   : discordperfect [true / false] Config for if Discord is disabled, whether decline command from owner too
+acceptinvite                              : acceptinvite [true / false] Whether bot will accept party invite
+acceptfriend                              : acceptfriend [true / false] Whether bot will accept friend request
+joinmessageenable                         : joinmessageenable [true / false] Whether bot will send message on someone joined to the party
+randommessageenable                       : randommessageenable [true / false] Whether bot will send random message on someone joined to the party
+wait                                      : Decline invite for config's waitinterval seconds
+join                                      : join [user name/user ID] Join to user's party
+joinid                                    : joinid [party ID] Join to party
+leave                                     : Leave party
+invite                                    : invite [user name / user ID] Invite user to the party
+inviteall                                 : Invite config's invitelist users
+message                                   : message [user name / user ID] : [Content] Send message to user
+partymessage                              : partymessage [content] Send message to party chat
+sendall                                   : sendall [content] Send same command to all bots
+status                                    : status [content] Set status
+banner                                    : banner [banner ID] [banner color] Set banner
+avatar                                    : avatar [CID] [color(optional)] Set avatar
+level                                     : level [level] Set level
+bp                                        : bp [tier] [XP boost] [friend XP boost] Set battlepass info
+privacy                                   : privacy [privacy_public / privacy_friends_allow_friends_of_friends / privacy_friends / privacy_private_allow_friends_of_friends / privacy_private] Set party's privacy
+privacy_public                            : privacy_public which uses in privacy command
+privacy_friends_allow_friends_of_friends  : privacy_friends_allow_friends_of_friends which uses in privacy command
+privacy_friends                           : privacy_friends which uses in privacy command
+privacy_private_allow_friends_of_friends  : privacy_private_allow_friends_of_friends which uses in privacy command
+privacy_private                           : privacy_private which uses in privacy command
+getuser                                   : getuser [user name / user ID] Show user's name and ID
+getfriend                                 : getefriend [user name / user ID] Show user's name and ID
+getpending                                : getpending [user name / user ID] Show user's name and ID
+getblock                                  : getblock [user name / user ID] Show user's name and ID
+info                                      : info [info_party / info_item / id / skin / bag / pickaxe / emote] Show party/item's info
+info_party                                : info_party which uses in info command
+pending                                   : pending [true / false] Accept all pending friend
+removepending                             : Cancel all friend request which bot sent
+addfriend                                 : addfriend [user name / user ID] Send friend request to user
+removefriend                              : removefriend [user name / user ID] Remove user from friend
+removeallfriend                           : Remove all friends
+remove_offline_for                        : remove_offline_for [day] [hour(optional)] [minute(optional)] Remove friends which offline for more than specified time
+acceptpending                             : acceptpending [user name / user ID] Accept friend request from user
+declinepending                            : declinepending [user name / user ID] Decline friend request from user
+blockfriend                               : blockfriend[user name / user ID] Block user
+unblockfriend                             : unblockfriend [user name / user ID] Unblock user
+voice                                     : voice [true / false] Enable voice chat
+chatban                                   : chatban [user name / user ID] : [Reason(Optional)] Chatban user
+promote                                   : promote [user name / user ID] Promote party leader to user
+kick                                      : kick [user name / user ID] Kick user
+hide                                      : hide [user name / user ID(optional)] Hide user
+show                                      : show [user name / user ID(optional)] Show user
+ready                                     : Set to Ready
+unready                                   : Set to Not Ready
+sitout                                    : Set to Sitting Out
+match                                     : match [remaining(optional)] Set match state
+unmatch                                   : Cancel match state
+swap                                      : swap [user name / user ID] Swap position with user
+outfitlock                                : outfitlock [true / false] Whether bot will change outfit
+backpacklock                              : backpacklock [true / false] Whether bot will change backpack
+pickaxelock                               : pickaxelock [true / false] Whether bot will change pickaxe
+emotelock                                 : emotelock [true / false] Whether bot will change emote
+stop                                      : Stop emote/all command
+addeditems                                : Show all items which added in latest update
+shopitems                                 : Show all items which in item shop
+alloutfit                                 : Show all outfits
+allbackpack                               : Show all backpacks
+allpet                                    : Show all pets
+allpickaxe                                : Show all pickaxes
+allemote                                  : Show all emotes
+cid                                       : cid [CID] Search item with CID and set to item which found
+bid                                       : bid [BID] Search item with BID and set to item which found
+petcarrier                                : petcarrier [Petcarrier] Search item with Petcarrier and set to item which found
+pickaxe_id                                : pickaxe_id [Pickaxe_ID] Search item with Pickaxe_ID and set to item which found
+eid                                       : eid [EID] Search item with EID and set to item which found
+emoji_id                                  : emoji_id [emoji] Search item with Emoji and set to item which found
+toy_id                                    : toy_id [toy] Search item with Toy and set to item which found
+id                                        : id [ID] Search item with ID and set to item which found
+outfit                                    : outfit [outfit name] Search item with outfit name and set to item which found
+backpack                                  : backpack [backpack name] Search item with backpack name and set to item which found
+pet                                       : pet [pet name] Search item with pet name and set to item which found
+pickaxe                                   : pickaxe [pickaxe name] Search item with pickaxe name and set to item which found
+emote                                     : emote [emote name] Search item with emote name and set to item which found
+emoji                                     : emoji [emoji name] Search item with emoji name and set to item which found
+toy                                       : toy [toy name] Search item with toy name and set to item which found
+item                                      : item [item name] Search item with item name and set to item which found
+set                                       : set [set name] Search item with set name
+setvariant                                : setvariant [skin / bag / pickaxe] [variant] [number] [variant] [number] [variant] [number]... If count of variant and number does not match, it will ignore. Set style info. See below
+addvariant                                : addvariant [skin / bag / pickaxe] [variant] [number] [variant] [number] [variant] [number]... If count of variant and number does not match, it will ignore. Add style info to current style info. See below
+setstyle                                  : setstyle [skin / bag / pickaxe] Search style with item which bot has currently setting and set style to it
+addstyle                                  : addstyle [skin / bag / pickaxe] Search style with item which bot has currently setting and add style to current style
+setenlightenment                          : setenlightenment [number] [number] Set enlightenment info. See below
+outfitasset                               : outfitasset [asset path] Set outfit with asset path
+backpackasset                             : backpackasset [asset path] Set backpack with asset path
+pickasset                                 : pickasset [asset path] Set pickaxe with asset path
+emoteasset                                : emoteasset [asset path] Set emote with asset path
 ```
 
 # replies
-"反応するメッセージ": "返す文字列"  
-のように設定する  
-複数ある場合は下のように , をつける  
+Set like this
+"Trigger word": "Reply word"  
+If you set multiple, add , like below  
 ```
 {
-    "hello": "こんにちは",
-    "goodbye": "さようなら"
+    "hello": "Hello!",
+    "goodbye": "Goodbye"
 }
 ```
 
-使用可能な変数
-ステータスで使える変数に加えて
+Usable variables
+In addition to variables can be used in status
 ```
-author_display_name              : メッセージの送り主のディスプレイネーム
-author_id                        : メッセージの送り主のID
-``
-
-使用可能な関数
-ステータスで使える関数と同じ
-
-# その他
-アバターID  
-使用可能な変数  
-```
-{bot}                           : ボットの現在のコスチューム
+author_display_name             : Message author's display_name
+author_id                       : Message author's id
 ```
 
-色  
-色の名前、または3つのカラーコード  
+Usable functions
+Same as functions can be used in status
+
+# Other
+Avatar ID  
+Usable variables  
+```
+{bot}                           : Bot's current outfit
+```
+
+Color  
+Color name or three color codes  
 ```
 TEAL
 SWEET_RED
@@ -355,13 +352,13 @@ DARK_PURPLE
 LIME
 INDIGO
 ```
-例  
+Example  
 ```
 "avatar_color": "TEAL"
 "avatar_color": "#ff0000,#00ff00,#0000ff"
 ```
 
-プラットフォーム  
+Platform  
 ```
 Windows     : WIN
 Mac         : MAC
@@ -372,116 +369,121 @@ IOS         : IOS
 Android     : AND
 ```
 
-プライバシー  
+Privacy  
 ```
-public                           : パブリック
-friends_allow_friends_of_friends : フレンド(フレンドのフレンドを許可)
-friends                          : フレンド
-private_allow_friends_of_friends : プライベート(フレンドのフレンドを許可)
-private                          : プライベート
-```
-
-ステータス  
-使用可能な変数  
-```
-friend_count                     : ボットのフレンド数
-pending_count                    : ボットの保留中のフレンド申請数
-block_count                      : ボットのブロック数
-display_name                     : ボットのディスプレイネーム
-id                               : ボットのID
-party_id                         : ボットのパーティーのID
-party_size                       : ボットのパーティーの人数
-party_max_size                   : ボットのパーティーの最大人数
-all_friend_count                 : 全てのボットのフレンド数の合計
-all_pending_count                : 全てのボットの保留中のフレンド申請数の合計
-all_block_count                  : 全てのボットのブロック数の合計
-guild_count                      : Discord botの参加しているサーバーの数
-```
-例  
-```
-フレンド数: {friend_count}
+public                           : Public
+friends_allow_friends_of_friends : Friend(Allow friends of friends)
+friends                          : Friend
+private_allow_friends_of_friends : Private(Allow friends of friends)
+private                          : Private
 ```
 
-使用可能な関数  
+Status  
+Usable variables  
 ```
-get_client_data(id)              : 指定したIDのボットの情報を取得する
-内容
-friend_count                     : ボットのフレンド数
-pending_count                    : ボットの保留中のフレンド申請数
-block_count                      : ボットのブロック数
-display_name                     : ボットのディスプレイネーム
-id                               : ボットのID
-party_id                         : ボットのパーティーのID
-party_size                       : ボットのパーティーの人数
-party_max_size                   : ボットのパーティーの最大人数
+friend_count                     : Bot's friend count
+pending_count                    : Bot's pending friend count
+block_count                      : Bot's block count
+display_name                     : Bot's display name
+id                               : Bot's ID
+party_id                         : Bot's party ID
+party_size                       : Bot's party memeber count
+party_max_size                   : Bot'S party's max member count
+all_friend_count                 : Total friend count of all bot
+all_pending_count                : Total pending friend count of all bot
+all_block_count                  : Total block count of all bot
+guild_count                      : Discord bot's guild count
+```
+Example  
+```
+Friend count: {friend_count}
+```
 
-get_guild_member_count(id)       : 指定したIDのDiscordサーバーのメンバー数を取得する
+Usable functions  
 ```
-例  
+get_client_data(id)              : Get bot's info with specified ID
+Content
+friend_count                     : Bot's friend count
+pending_count                    : Bot's pending friend count
+block_count                      : Bot's block count
+display_name                     : Bot's display name
+id                               : Bot's ID
+party_id                         : Bot's party ID
+party_size                       : Bot's party memeber count
+party_max_size                   : Bot'S party's max member count
+
+get_guild_member_count(id)       : Get member count of guild with specified ID
 ```
-ボット1のフレンド数: {get_client_data('Bot1ID')['friend_count']}
-サーバー1のメンバー数: {get_guild_member_count(Guild1ID)}
+Example  
+```
+Bot1's friend count: {get_client_data('Bot1ID')['friend_count']}
+Guild1's member count: {get_guild_member_count(Guild1ID)}
 ```
 
 joinmessage & randommessage
-使用可能な変数
-ステータスで使える変数に加えて
+Usable variables
+In addition to variables can be used in status
 ```
-member_display_name              : 参加してきたメンバーのディスプレイネーム
-member_id                        : 参加してきたメンバーのID
-``
-
-使用可能な関数
-ステータスで使える関数と同じ
-
-チャンネル名  
-使用可能な変数  
-```
-{name}                           : ボットのディスプレイネーム
-{id}                             : ボットのID
+member_display_name             : Member's display_name
+member_id                       : Member's id
 ```
 
-ステータスの種類  
+Usable functions
+Same as functions can be used in status
+
+Channel name  
+Usable variables  
 ```
-playing                          : プレイ中       
-listening                        : 再生中
-watching                         : 視聴中
+{name}                           : Bot's display name
+{id}                             : Bot's ID
+```
+You can use these as command channel  
+```
+Test-Bot1-command-channel
+Test-Bot2-command-channel
+```
+if setting is default  
+```
+{name}-command-channel
+```
+and bot's name is
+```
+Test Bot1
+Test Bot2
 ```
 
-デフォルトの  
-{name}-command-channel  
-でボットの名前が  
-Test Bot1  
-Test Bot2  
-の場合  
-Test-Bot1-command-channel  
-Test-Bot2-command-channel  
-がそれぞれコマンドチャンネルとして使える  
-
-IP  
-使用可能な変数  
+Status type  
 ```
-{ip} : デフォルトのIP
+playing                          : Playing       
+listening                        : Listening
+watching                         : Watching
 ```
 
-マッチ方式  
+IP
+Usable variables  
 ```
-full     : 完全一致
-contains : それを含んでいる
-starts   : それで始まる
-ends     : それで終わる
+{ip}                             : Default IP
+```
+
+Match method  
+```
+full     : Perfect matching
+contains : Contains it
+starts   : Stats with it
+ends     : Ends with it
 ```
 
 variant  
 ```
 pattern/numeric/clothing_color/jersey_color/parts/progressive/particle/material/emissive
-基本的にはmaterialやprogressive,partsなどか多く使われている
-紫スカルトルーパーの場合は clothing_color 1
-jersey_color はサッカースキンで使われます
+Usually material, progressive, parts are often used
+For example, purple skull trooper is
+clothing_color 1
+jersey_color are used for soccer skins
 ```
 
 enlightenment  
 ```
-8ボールvsスクラッチのグリッチなどの情報
-シーズン(チャプター2内) / 数値 の組み合わせ
+Fro example, 8ball vs Scratch's glitch info are enlightenment
+Season(In chapter 2) / Number
 ```
